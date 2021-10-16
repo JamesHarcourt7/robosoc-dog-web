@@ -22,30 +22,13 @@ body {
     overflow: hidden;
 }
 
-.camera-view {
+#camera-view {
     width: 110%;
     object-fit: contain;
     position: relative;
     animation-name: movement;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-}
-
-@keyframes movement {
-    0% {
-        transform: translate3d(-20px, -20px, 0px);
-        animation-timing-function: ease-in;
-    }
-    33% {
-        transform: translate3d(-40px, -50px, 0px);
-    }
-    66% {
-        transform: translate3d(-20px, 0px, 0px);
-        animation-timing-function: ease-out;
-    }
-    100% {
-        transform: translate3d(-20px, -20px, 0px);
-    }
 }
 
 #info-box1 {

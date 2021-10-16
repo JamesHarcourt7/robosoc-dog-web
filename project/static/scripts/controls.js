@@ -2,6 +2,9 @@ var w = false
 var a = false
 var s = false
 var d = false
+var cam = document.getElementById("camera-view")
+var x = 0
+var y = 0
 
 document.addEventListener('keydown', function(event) {
     if(event.keyCode == 87) {
@@ -41,9 +44,13 @@ document.addEventListener('keyup', function(event) {
     }
 });
 
-/*
-(function(){
 
-    setTimeout(arguments.callee, 500);
+(function(){
+    if (w) y ++;
+    if (a) x ++;
+    if (s) y --;
+    if (d) x --;
+    cam.style.top = y + "px";
+    cam.style.left = x + "px";
+    setTimeout(arguments.callee, 25);
 })();
-*/
