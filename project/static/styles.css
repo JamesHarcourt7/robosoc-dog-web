@@ -1,0 +1,93 @@
+body {
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    font-family: "Comic Sans MS"
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: horizontal;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#camera-box {
+    display: block;
+    width: 40%;
+    height: 300px;
+    border: solid;
+    border-color: #00FFFF;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.camera-view {
+    width: 110%;
+    object-fit: contain;
+    position: relative;
+    animation-name: movement;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movement {
+    0% {
+        transform: translate3d(-20px, -20px, 0px);
+        animation-timing-function: ease-in;
+    }
+    33% {
+        transform: translate3d(-40px, -50px, 0px);
+    }
+    66% {
+        transform: translate3d(-20px, 0px, 0px);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate3d(-20px, -20px, 0px);
+    }
+}
+
+#info-box1 {
+    text-align: left;
+    width: 30%;
+    height: 300px;
+    border: solid;
+    border-color: #00FFFF;
+    margin: 20px
+}
+
+#control-box {
+    width: 40%;
+    height: 200px;
+}
+
+#who-knows {
+    width: 40%;
+    height: 200px;
+    border: solid;
+    border-color: #00FFFF;
+    margin: 20px;
+}
+
+.key {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+#w {
+    left: 170px;
+}
+
+#a {
+    top: 85px;
+}
+
+#s {
+    top: 85px;
+}
+
+#d {
+    top: 85px;
+}

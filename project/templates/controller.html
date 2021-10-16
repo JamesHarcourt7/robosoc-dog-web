@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>RoboSoc Robot Dog</title>
+    <meta charset="UTF-8">
+    <meta name="Author" content="James Harcourt">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/styles.css"/>
 </head>
 <body>
     <h1>RoboSoc Robot Dog</h1>
+    <div class="flex-container">
+        <div id="camera-box">
+            <img class="camera-view" src="static/img/tennis-ball.png" alt="Tennis Ball On Floor">
+        </div>
+        <div id="info-box1">
+            <div>
+                Left Arm Rot: <span id="lar"></span>
+            </div>
+            <div>
+                Right Arm Rot: <span id="rar"></span>
+            </div>
+            <div>
+                Left Leg Rot: <span id="llr"></span>
+            </div>
+            <div>
+                Right Leg Rot: <span id="rlr"></span>
+            </div>
+            <br>
+            <div>
+                Power Consumption: Critical
+            </div>
+            <div>
+                Motors: Spinning
+            </div>
+            <div>
+                Carl: Crying
+            </div>
+            <br>
+        </div>
+        <div id="control-box">
+            <img id="w" class="key" src="static/img/computer_key_W.png" alt="W Key">
+            <img id="a" class="key" src="static/img/computer_key_A.png" alt="A Key">
+            <img id="s" class="key" src="static/img/computer_key_S.png" alt="S Key">
+            <img id="d" class="key" src="static/img/computer_key_D.png" alt="D Key">
+        </div>
+        <div id="who-knows">
+            This is a box
+        </div>
+    </div>
+    <script src="static/scripts/controls.js"></script>
+    <script src="static/scripts/junk.js"></script>
 </body>
 </html>
